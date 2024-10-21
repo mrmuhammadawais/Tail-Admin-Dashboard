@@ -295,7 +295,7 @@ const TaskList = () => {
 
           <div className="mb-10">
             <Title level={4} className="mb-3 font-bold text-lg">
-              To Do's ({tasks.filter((task) => task.status === "todo").length})
+            To Do&#39;s ({tasks.filter((task) => task.status === "todo").length})
             </Title>
             {tasks.filter((task) => task.status === "todo").map(renderTaskCard)}
           </div>

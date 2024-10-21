@@ -20,6 +20,7 @@ import {
   Switch,
   ConfigProvider,
   Input,
+  Image,
 } from "antd";
 import {
   BellOutlined,
@@ -165,7 +166,7 @@ const MainLayout = ({ children }) => {
           }}
         >
           <div className="p-4 text-center">
-            <img
+            <Image
               src={Logo.src}
               alt="Logo"
               className={`max-w-full h-auto transition-all duration-300 ${collapsed ? "hidden" : "block"}`}
