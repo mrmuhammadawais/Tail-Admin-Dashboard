@@ -326,9 +326,14 @@ const Settings = () => {
       </Upload>
 
       <div className="flex justify-end gap-4 mt-5">
-        <button className="flex justify-center rounded border border-stroke px-5 py-2 font-medium text-black hover:shadow-1 dark:border-strokedark dark:text-white">
+{/*         <button className="flex justify-center rounded border border-stroke px-5 py-2 font-medium text-black hover:shadow-1 dark:border-strokedark dark:text-white">
           Cancel
-        </button>
+        </button> */}
+        <button
+  className="flex justify-center rounded px-6 py-2 font-medium text-black bg-[#f0f2f5] hover:bg-opacity-90 dark:bg-[#24303f] dark:text-[#fff]"
+>
+  Cancel
+</button>
         <button
           className="flex justify-center rounded bg-primary px-6 py-2 font-medium text-white hover:bg-opacity-90 bg-[#3C50E0]"
           onClick={handleSaveImage}
