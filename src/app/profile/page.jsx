@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -100,12 +99,10 @@ const Profile = () => {
               customRequest={handleCoverPhotoUpload}
               disabled={isCoverUploading}
             >
-           <Button className="absolute bottom-2 right-2 sm:right-4 bg-[#3c50e0] text-sm font-small text-white rounded-sm w-[48px] sm:w-[83px] h-[23px] ml-2 sm:ml-0">
-  <CameraOutlined />
-  Edit
-</Button>
-
-
+              <Button className="absolute bottom-2 right-2 sm:right-4 bg-[#3c50e0] text-sm font-small text-white rounded-sm w-[48px] sm:w-[83px] h-[23px] ml-2 sm:ml-0">
+                <CameraOutlined />
+                Edit
+              </Button>
             </Upload>
           </div>
 
@@ -143,36 +140,36 @@ const Profile = () => {
           </div>
 
           <div className="mx-auto mb-5 mt-2 grid grid-cols-3 gap-4 w-full sm:w-[380px] rounded-md border border-stroke py-2.5 shadow-1 dark:border-strokedark">
-  <div className="flex flex-col sm:flex-row sm:items-center justify-center sm:gap-2 border-r border-stroke px-4 dark:border-strokedark">
-    <span
-      className="font-bold text-black dark:text-white"
-      style={{ color: darkMode ? "#fff" : "#1c2434" }}
-    >
-      259
-    </span>
-    <span className="text-sm color-[#96a1b0]">Posts</span>
-  </div>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-center sm:gap-2 border-r border-stroke px-4 dark:border-strokedark">
+              <span
+                className="font-bold text-black dark:text-white"
+                style={{ color: darkMode ? "#fff" : "#1c2434" }}
+              >
+                259
+              </span>
+              <span className="text-sm color-[#96a1b0]">Posts</span>
+            </div>
 
-  <div className="flex flex-col sm:flex-row sm:items-center justify-center sm:gap-2 border-r border-stroke px-4 dark:border-strokedark">
-    <span
-      className="font-bold text-black dark:text-white"
-      style={{ color: darkMode ? "#fff" : "#1c2434" }}
-    >
-      129K
-    </span>
-    <span className="text-sm color-[#96a1b0]">Followers</span>
-  </div>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-center sm:gap-2 border-r border-stroke px-4 dark:border-strokedark">
+              <span
+                className="font-bold text-black dark:text-white"
+                style={{ color: darkMode ? "#fff" : "#1c2434" }}
+              >
+                129K
+              </span>
+              <span className="text-sm color-[#96a1b0]">Followers</span>
+            </div>
 
-  <div className="flex flex-col sm:flex-row sm:items-center justify-center sm:gap-2 px-4">
-    <span
-      className="font-bold text-black dark:text-white"
-      style={{ color: darkMode ? "#fff" : "#1c2434" }}
-    >
-      2K
-    </span>
-    <span className="text-sm color-[#96a1b0]">Following</span>
-  </div>
-</div>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-center sm:gap-2 px-4">
+              <span
+                className="font-bold text-black dark:text-white"
+                style={{ color: darkMode ? "#fff" : "#1c2434" }}
+              >
+                2K
+              </span>
+              <span className="text-sm color-[#96a1b0]">Following</span>
+            </div>
+          </div>
 
           <div className="mt-4 text-center px-4">
             <Title

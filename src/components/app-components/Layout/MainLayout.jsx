@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 "use client";
 import React, { useState, useEffect } from "react";
 import {
@@ -86,7 +76,7 @@ const MainLayout = ({ children }) => {
       const isMobile = window.innerWidth < 1024;
       setIsMobile(isMobile);
       setCollapsed(isMobile);
-      if (isMobile) setSidebarVisible(false); // Hide sidebar on mobile
+      if (isMobile) setSidebarVisible(false); 
     };
 
     handleResize();
@@ -192,7 +182,7 @@ const MainLayout = ({ children }) => {
               },
               onClick: () => {
                 router.push(path);
-                if (isMobile) setSidebarVisible(false); // Hide sidebar on mobile after click
+                if (isMobile) setSidebarVisible(false); 
               },
             }))}
           />
@@ -217,7 +207,6 @@ const MainLayout = ({ children }) => {
               />
             )}
 
-            {/* Search Input */}
             <Input
               placeholder="Type to search..."
               prefix={<SearchOutlined />}
@@ -231,7 +220,6 @@ const MainLayout = ({ children }) => {
               }}
             />
 
-            {/* User Info Section */}
             <Space size="middle" align="center">
               <Switch
                 checked={darkMode}
@@ -278,13 +266,6 @@ const MainLayout = ({ children }) => {
 };
 
 export default MainLayout;
-
-
-
-
-
-
-
 
 
 

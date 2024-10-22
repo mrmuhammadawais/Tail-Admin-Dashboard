@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "use client";
 import React from "react";
 import { Card, Col, Row } from "antd";
@@ -43,10 +28,6 @@ const iconMapping = {
   user: <UsergroupAddOutlined className="text-xl" />,
 };
 
-
-
-
-
 const DashboardCards = () => {
   const darkMode = useSelector((state) => state.tasks.darkMode);
 
@@ -71,7 +52,6 @@ const DashboardCards = () => {
                     }}
                   >
                     {React.cloneElement(iconMapping[card.icon], {
-                      
                       style: {
                         color: darkMode ? "#c0c3c7" : "#3B82F6",
                         width: "14px",
@@ -112,127 +92,43 @@ const DashboardCards = () => {
           <DashboardCharts />
         </div>
 
-<<<<<<< HEAD
-    
-{/* 
-=======
-     
->>>>>>> bdc4bd3beb9dc743034c1b78154bdce8d1b33fe7
-<div>
-  <Row gutter={24}>
-    <Col
-      xs={24}
-      lg={16}
-<<<<<<< HEAD
-      className="w-full sm:w-full"
-    >
-      <TopChannelsTable />
-    </Col>
+        <div>
+          <Row gutter={24}>
+            <Col xs={24} lg={16} className="w-full">
 
-    <Col
-      xs={24}
-      lg={8}
-      className="w-full sm:w-full"
-      style={{ maxWidth: "100%" }} 
-    >
-      <Card
-        style={{
-          backgroundColor: darkMode ? "#24303f" : "#ffffff",
-          width: "100%", 
-          border: "none",
-          borderRadius: "0",
-          height: "467px",
-        }}
-        title={
-          <div
-            className={`border-none ${darkMode ? "text-white" : "bg-[#ffffff]"}`}
-            style={{ marginBottom: "-5px"}}
-          >
-            <ChatList />
-          </div>
-        }
-      />
-    </Col>
-  </Row>
-</div>  */}
- 
-<div>
-  <Row gutter={24}>
-    <Col
-      xs={24}
-      lg={16}
-      className="w-full"
-    >
-      <TopChannelsTable />
-    </Col>
+              <TopChannelsTable />
+            </Col>
 
-    <Col
-      xs={24}
-      lg={8}
-      className="w-full mt-4 sm:mt-4 md:mt-0"  // Apply margin-top only for smaller screens
-      style={{ maxWidth: "100%" }} 
-    >
-      <Card
-        style={{
-          backgroundColor: darkMode ? "#24303f" : "#ffffff",
-          width: "100%", 
-          border: "none",
-          borderRadius: "0",
-          height: "467px",
-        }}
-        title={
-          <div
-            className={`border-none ${darkMode ? "text-white" : "bg-[#ffffff]"}`}
-            style={{ marginBottom: "-5px"}}
-          >
-            <ChatList />
-          </div>
-        }
-      />
-    </Col>
-  </Row>
-</div>
+            <Col
+              xs={24}
+              lg={8}
 
- 
-     
-      </div> 
-
-      
-=======
-      className="w-full"
-    >
-      <TopChannelsTable />
-    </Col>
-
-    <Col
-      xs={24}
-      lg={8}
-      className="w-full mt-4 sm:mt-4 md:mt-0"  
-      style={{ maxWidth: "100%" }} 
-    >
-      <Card
-        style={{
-          backgroundColor: darkMode ? "#24303f" : "#ffffff",
-          width: "100%", 
-          border: "none",
-          borderRadius: "0",
-          height: "467px",
-        }}
-        title={
-          <div
-            className={`border-none ${darkMode ? "text-white" : "bg-[#ffffff]"}`}
-            style={{ marginBottom: "-5px"}}
-          >
-            <ChatList />
-          </div>
-        }
-      />
-    </Col>
-  </Row>
-</div>
-
+              className="w-full mt-4 sm:mt-4 md:mt-0"
+              style={{ maxWidth: "100%" }}
+            >
+              <Card
+                style={{
+                  backgroundColor: darkMode ? "#24303f" : "#ffffff",
+                  width: "100%",
+                  border: "none",
+                  borderRadius: "0",
+                  height: "467px",
+                }}
+                title={
+                  <div
+                    className={`border-none ${
+                      darkMode ? "text-white" : "bg-[#ffffff]"
+                    }`}
+                    style={{ marginBottom: "-5px" }}
+                  >
+                    <ChatList />
+                  </div>
+                }
+              />
+            </Col>
+          </Row>
+        </div>
       </div>
->>>>>>> bdc4bd3beb9dc743034c1b78154bdce8d1b33fe7
     </MainLayout>
   );
 };
