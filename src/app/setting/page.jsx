@@ -960,7 +960,7 @@ const Settings = () => {
                   className="mr-1"
                 />
 
-                <div>
+              <div>
                   <span
                     className="mb-1.5 text-customGray dark:text-white"
                     style={{ color: darkMode ? "#ffffff" : "#000000" }}
@@ -968,38 +968,24 @@ const Settings = () => {
                     Edit your photo
                   </span>
 
-                  {/* <span className="flex gap-2.5">
+                  <span className="flex gap-2.5"
+                    style={{ color: darkMode ? "#ffffff" : "#000000" }}>
                     <button
+                       style={{ color: darkMode ? "#ffffff" : "#000000" }}
                       className="text-sm text-customGray dark:text-white hover:text-primary"
                       onClick={handleDeleteImage}
                     >
                       Delete
                     </button>
                     <button
+                       style={{ color: darkMode ? "#ffffff" : "#000000" }}
                       className="text-sm text-customGray dark:text-white hover:text-primary-color"
                       onClick={handleSaveImage}
                       disabled={!newImage}
                     >
                       Update
                     </button>
-                  </span> */}
-                  <span className="flex flex-wrap gap-2.5">
-  <button
-    className="text-sm text-customGray dark:text-white hover:text-primary"
-    onClick={handleDeleteImage}
-  >
-    Delete
-  </button>
-  <button
-    className="text-sm text-customGray dark:text-white hover:text-primary-color"
-    onClick={handleSaveImage}
-    disabled={!newImage}
-  >
-    Update
-  </button>
-</span>
-
-                </div>
+                  </span>
               </div>
 
           
