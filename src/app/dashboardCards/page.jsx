@@ -270,33 +270,44 @@ const DashboardCards = () => {
           <DashboardCharts />
         </div>
 
-        <div>
-          <Row gutter={24}>
-            <Col xs={24} lg={16}>
-              <TopChannelsTable />
-            </Col>
+     
+<div>
+  <Row gutter={24}>
+    <Col
+      xs={24}
+      lg={16}
+      className="w-full"
+    >
+      <TopChannelsTable />
+    </Col>
 
-            <Col xs={24} lg={8}>
-              <Card
-                style={{
-                  backgroundColor: darkMode ? "#24303f" : "#ffffff",
-                  width: "302px",
-                  border: "none",
-                  borderRadius: "0",
-                  height: "467px",
-                }}
-                title={
-                  <div
-                    className={`border-none ${darkMode ? "text-white" : "bg-[#ffffff]"}`}
-                    style={{ marginBottom: "-5px" }}
-                  >
-                    <ChatList />
-                  </div>
-                }
-              />
-            </Col>
-          </Row>
-        </div>
+    <Col
+      xs={24}
+      lg={8}
+      className="w-full mt-4 sm:mt-4 md:mt-0"  
+      style={{ maxWidth: "100%" }} 
+    >
+      <Card
+        style={{
+          backgroundColor: darkMode ? "#24303f" : "#ffffff",
+          width: "100%", 
+          border: "none",
+          borderRadius: "0",
+          height: "467px",
+        }}
+        title={
+          <div
+            className={`border-none ${darkMode ? "text-white" : "bg-[#ffffff]"}`}
+            style={{ marginBottom: "-5px"}}
+          >
+            <ChatList />
+          </div>
+        }
+      />
+    </Col>
+  </Row>
+</div>
+
       </div>
     </MainLayout>
   );
