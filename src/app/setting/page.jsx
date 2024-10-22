@@ -968,36 +968,25 @@ const Settings = () => {
                     Edit your photo
                   </span>
 
-                  {/* <span className="flex gap-2.5">
+                  <span className="flex gap-2.5"
+                    style={{ color: darkMode ? "#ffffff" : "#000000" }}>
                     <button
+                       style={{ color: darkMode ? "#ffffff" : "#000000" }}
                       className="text-sm text-customGray dark:text-white hover:text-primary"
                       onClick={handleDeleteImage}
                     >
                       Delete
                     </button>
                     <button
+                       style={{ color: darkMode ? "#ffffff" : "#000000" }}
                       className="text-sm text-customGray dark:text-white hover:text-primary-color"
                       onClick={handleSaveImage}
                       disabled={!newImage}
                     >
                       Update
                     </button>
-                  </span> */}
-                  <span className="flex flex-wrap gap-2.5">
-  <button
-    className="text-sm text-customGray dark:text-white hover:text-primary"
-    onClick={handleDeleteImage}
-  >
-    Delete
-  </button>
-  <button
-    className="text-sm text-customGray dark:text-white hover:text-primary-color"
-    onClick={handleSaveImage}
-    disabled={!newImage}
-  >
-    Update
-  </button>
-</span>
+                  </span>
+                
 
                 </div>
               </div>
@@ -1005,7 +994,7 @@ const Settings = () => {
           
        <Upload name="avatar" showUploadList={false} beforeUpload={beforeUpload} accept=".png,.jpg,.jpeg,.gif">
        <div
-          className="relative mb-5.5 block w-full max-w-xs h-48 flex flex-col items-center justify-center cursor-pointer appearance-none rounded border border-2 border-blue-500 border-dashed p-4 bg-gray px-4 py-4 dark:bg-meta-4 md:w-[289px]"
+          className="relative mb-5.5 block w-full max-w-xs h-48 flex flex-col items-center justify-center cursor-pointer appearance-none rounded border border-2 border-blue-500 border-dashed p-4 bg-gray px-4 py-4 dark:bg-meta-4 md:w-[289px] sm:w-full"
           style={{ borderColor: "#3c50e0" }}
         >
           <UploadOutlined className="text-2xl mb-2 text-blue-500" />
@@ -1023,9 +1012,31 @@ const Settings = () => {
       </Upload>
 
       <div className="flex justify-end gap-4 mt-5">
-        <button className="flex justify-center rounded border border-stroke px-5 py-2 font-medium text-black hover:shadow-1 dark:border-strokedark dark:text-white">
+        {/* <button className="flex justify-center rounded border border-stroke px-5 py-2 font-medium text-black hover:shadow-1 dark:border-strokedark dark:text-white">
           Cancel
-        </button>
+        </button> */}
+        {/* <button className="flex justify-center rounded border border-stroke px-5 py-2 font-medium text-black dark:text-[#ffffff] hover:shadow-1 dark:border-strokedark">
+  Cancel
+</button> */}
+
+{/* <button
+          className="flex justify-center rounded bg-primary px-6 py-2 font-medium text-white hover:bg-opacity-90 bg-[#3C50E0]"
+        
+        >
+          Cancel
+        </button> */}
+        {/* <button
+  className="flex justify-center rounded px-6 py-2 font-medium text-black bg-[#f0f2f5] hover:bg-opacity-90 dark:bg-[#1a222c] dark:text-[#ffffff]"
+>
+  Cancel
+</button> */}
+<button
+  className="flex justify-center rounded px-6 py-2 font-medium text-black bg-[#f0f2f5] hover:bg-opacity-90 dark:bg-[#24303f] dark:text-[#fff]"
+>
+  Cancel
+</button>
+
+
         <button
           className="flex justify-center rounded bg-primary px-6 py-2 font-medium text-white hover:bg-opacity-90 bg-[#3C50E0]"
           onClick={handleSaveImage}

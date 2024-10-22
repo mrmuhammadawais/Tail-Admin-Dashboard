@@ -142,7 +142,7 @@ const Profile = () => {
             </Text>
           </div>
 
-          <div className="mx-auto mb-5 mt-2 grid grid-cols-3 gap-4 w-full sm:w-[380px] rounded-md border border-stroke py-2.5 shadow-1 dark:border-strokedark dark:bg-[#37404F]">
+          <div className="mx-auto mb-5 mt-2 grid grid-cols-3 gap-4 w-full sm:w-[380px] rounded-md border border-stroke py-2.5 shadow-1 dark:border-strokedark">
   <div className="flex flex-col sm:flex-row sm:items-center justify-center sm:gap-2 border-r border-stroke px-4 dark:border-strokedark">
     <span
       className="font-bold text-black dark:text-white"
